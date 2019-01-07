@@ -3,11 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Framework.java.SettingBrowser">
+      <class name="com.Framework.java.TestBase">
         <methods>
-          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.Framework.java.SettingBrowser -->
+      </class> <!-- com.Framework.java.TestBase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
